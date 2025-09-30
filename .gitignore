@@ -1,6 +1,5 @@
 # Ignore dataset & large files
-data/
-datasets/
+dataset/
 
 # Ignore trained model weights
 *.pth
