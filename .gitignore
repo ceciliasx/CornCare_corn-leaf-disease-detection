@@ -1,0 +1,13 @@
+# Ignore dataset & large files
+data/
+datasets/
+*.csv
+*.xlsx
+*.zip
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+.env/
