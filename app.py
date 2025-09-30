@@ -5,7 +5,7 @@ from torchvision import models, transforms
 from PIL import Image
 import base64
 
-st.set_page_config(page_title="Detect Corn Leaf Disease", layout="centered")
+st.set_page_config(page_title="CornCare: Detect Corn Leaf Disease", layout="centered")
 
 main_bg = "corn_leaf_bg.jpg"
 main_bg_ext = "jpg"
@@ -58,7 +58,8 @@ transform = transforms.Compose([
 ])
 
 # UI
-st.title("🌽 Corn Leaf Disease Detector")
+st.title("🌽 CornCare")
+st.subheader("Corn Leaf Disease Detection")
 st.markdown("### Detect Hawar (Blight), Karat (Rust), or Sehat (Healthy) Corn Leaves")
 st.text("Model: ResNet50 | Dataset: 3000+ Images")
 
