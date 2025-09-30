@@ -1,9 +1,9 @@
 # Ignore dataset & large files
 data/
 datasets/
-*.csv
-*.xlsx
-*.zip
+
+# Ignore trained model weights
+*.pth
 
 # Ignore Jupyter checkpoints
 .ipynb_checkpoints/
