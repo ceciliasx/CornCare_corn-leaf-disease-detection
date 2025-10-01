@@ -2,7 +2,7 @@
 dataset/
 
 # Ignore trained model weights
-# *.pth
+*.pth
 
 # Ignore Jupyter checkpoints
 .ipynb_checkpoints/

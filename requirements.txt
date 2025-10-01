@@ -3,3 +3,8 @@ torchvision
 streamlit
 scikit-learn
 pillow
+numpy
+matplotlib
+seaborn
+opencv-python
+pytorch-grad-cam
