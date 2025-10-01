@@ -38,7 +38,13 @@ st.markdown(f"""
 @st.cache_resource(show_spinner=True)
 def load_model():
     model = models.resnet50(pretrained=False)
-    model.fc = nn.Linear(model.fc.in_features, 3)  # 3 classes
+    in_features = model.fc.in_features
+    model.fc = nn.Sequential(
+            nn.Linear(in_features, 512),
+            nn.ReLU(),
+            nn.Dropout(0.5),
+            nn.Linear(512, 3)
+        )
     model.load_state_dict(torch.load("best_ResNet.pth", map_location="cpu"))
     model.eval()
     return model
@@ -48,9 +54,10 @@ class_names = ["hawar", "karat", "sehat"]
 
 # Transform image
 transform = transforms.Compose([
-    transforms.Resize((224, 224)),
+    # transforms.Resize((224, 224)),
+    transforms.RandomResizedCrop(224),
     transforms.RandomHorizontalFlip(),
-    transforms.RandomRotation(30),
+    transforms.RandomRotation(15),
     transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2),
     transforms.ToTensor(),
     transforms.Normalize([0.485, 0.456, 0.406],
