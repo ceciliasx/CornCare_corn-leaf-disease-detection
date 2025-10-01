@@ -29,6 +29,7 @@ CornCare_corn-leaf-disease-detection/
 
 - **`main`** → Uses **ResNet50** as the backbone model.  
 - **`densenet-comparison`** → Compares **ResNet50** and **DenseNet121** performance.
+- **`efficientnetb0-comparison`** → Compares **ResNet50** and **EfficientNet-B0** performance.
 
 ---
 
