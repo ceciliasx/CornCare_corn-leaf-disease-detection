@@ -68,8 +68,9 @@ CornCare is trained on publicly available corn leaf datasets:
 
 - **ResNet50** (main branch): trained as the primary model.  
 - **DenseNet121** (comparison branch): tested for performance comparison.  
+- **EfficientNet-B0** (comparison branch): tested for performance comparison.  
 - **Loss Function:** CrossEntropyLoss  
 - **Optimizer:** Adam (lr=0.001) with `ReduceLROnPlateau` scheduler  
-- **Data Augmentation:** Random flips, rotations, and color jitter  
+- **Data Augmentation:** Random flips, resized crops, rotations, and color jitter  
 
 ---
