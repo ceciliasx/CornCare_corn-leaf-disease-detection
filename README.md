@@ -7,6 +7,7 @@ It classifies corn leaves into **three categories**:
 - 🍃 **Hawar (Blight)**  
 
 Deployed App: [CornCare Streamlit App (ResNet50)](https://corncare-corn-leaf-disease-detection.streamlit.app/)
+
 Deployed App: [CornCare Streamlit App (ResNet50 & EfficientNetB0)](https://corncare-aol.streamlit.app/)
 
 ---
@@ -70,6 +71,7 @@ CornCare is trained on publicly available corn leaf datasets:
 
 - **ResNet50** (main branch): trained as the primary model.  
 - **DenseNet121** (comparison branch): tested for performance comparison.  
+- **EfficientNet-B0** (comparison branch): tested for performance comparison.  
 - **Loss Function:** CrossEntropyLoss  
 - **Optimizer:** Adam (lr=0.001) with `ReduceLROnPlateau` scheduler  
 - **Data Augmentation:** Random flips, rotations, and color jitter  
