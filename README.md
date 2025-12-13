@@ -19,6 +19,7 @@ CornCare_corn-leaf-disease-detection/
 │── .gitignore
 │── app.py                # Streamlit app for deployment
 │── best_ResNet.pth       # Trained ResNet50 model
+│── best_EfficientNet.pth       # Trained EfficientNetB0 model
 │── corn_leaf_bg.jpg      # Background image for app
 │── main.ipynb            # Training & experimentation notebook
 │── requirements.txt      # Dependencies for Streamlit app
@@ -30,6 +31,7 @@ CornCare_corn-leaf-disease-detection/
 
 - **`main`** → Uses **ResNet50** as the backbone model.  
 - **`densenet-comparison`** → Compares **ResNet50** and **DenseNet121** performance.
+- **`efficientnetb0-comparison`** → Compares **ResNet50** and **EfficientNet-B0** performance.
 
 ---
 
