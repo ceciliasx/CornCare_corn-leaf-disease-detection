@@ -6,7 +6,8 @@ It classifies corn leaves into **three categories**:
 - 🍂 **Karat (Rust)**  
 - 🍃 **Hawar (Blight)**  
 
-Deployed App: [CornCare Streamlit App](https://corncare-corn-leaf-disease-detection.streamlit.app/)
+Deployed App: [CornCare Streamlit App (ResNet50)](https://corncare-corn-leaf-disease-detection.streamlit.app/)
+Deployed App: [CornCare Streamlit App (ResNet50 & EfficientNetB0)](https://corncare-aol.streamlit.app/)
 
 ---
 
